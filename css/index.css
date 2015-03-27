@@ -1,0 +1,116 @@
+.content {
+    width: 1000px;
+    margin: 40px auto 0 auto;
+}
+
+.topNav {
+    width: 981px;
+    height: 38px;
+    margin-left: 10px;
+    border-bottom: 2px solid #0388a6;
+}
+
+.good {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -5px;
+    *+top: 5px;
+}
+
+.goodP {
+    font-size: 20px;
+    position: relative;
+    top: -12px;
+    *+top: 0;
+}
+
+.topNavUl {
+    display: inline-block;
+    *+position: absolute;
+}
+
+.topNavUl li {
+    float: left;
+    width: 123px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.topNavUl li p {
+    line-height: 40px;
+}
+
+.topNavUl li img {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+.topNavUl li img.active {
+    display: block;
+}
+
+.main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.mainContent {
+    width: 1000px;
+    float: left;
+}
+
+.class {
+    width: 230px;
+    height: 206px;
+    overflow: hidden;
+    margin: 10px;
+    float: left;
+}
+
+.classImg {
+    color: #212222;
+    display: inline-block;
+    width: 230px;
+    height: 160px;
+}
+
+.classImg img{
+    width: 230px;
+    height: 160px;
+}
+
+.class span {
+    font-size: 12px;
+}
+
+span.free {
+    color: #e8584f;
+}
+
+#page {
+    margin: 40px 0 60px 0;
+    width: 100%;
+    height: 32px;
+    text-align: center;
+    display: block;
+}
+
+.page {
+    padding: 6px;
+    line-height: 18px;
+    font-size: 18px;
+    color: #6d6d6d;
+    display: inline-block;
+    background-color: #fffefe;
+}
+
+.now {
+    color: #2573b5;
+    border: 1px solid #77a8d1;
+}
