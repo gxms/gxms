@@ -34,5 +34,6 @@ function appendData(data) {
             empty += '</div>';
         }
     });
-    $('.mainContent').empty().append(empty);
+    empty += '<div class="clearfloat"></div>';
+    $('.main').empty().append(empty);
 }
