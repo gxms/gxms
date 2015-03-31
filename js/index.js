@@ -9,17 +9,17 @@ $('.now').removeAttr("href");
 function loadData(type) {
     if (window.localStorage) {
         if (localStorage.getItem(type)) {
-            var data = $.parseJSON(localStorage.getItem(type));
+            var data = JSON.parse(localStorage.getItem(type));
             appendData(data);
         } else {
             var jsonData = $.ajax({url: ("js/" + type + ".json"), async: false}).responseText;
             localStorage.setItem(type, jsonData);
-            var data = $.parseJSON(jsonData);
+            var data = JSON.parse(jsonData);
             appendData(data);
         }
     } else {
         var jsonData = $.ajax({url: ("js/" + type + ".json"), async: false}).responseText;
-        var data = $.parseJSON(jsonData);
+        var data = JSON.parse(jsonData);
         appendData(data);
     }
 }
