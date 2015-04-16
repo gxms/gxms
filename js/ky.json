@@ -4,107 +4,95 @@
     "href": "#",
     "name": "高性能JavaScript",
     "dept": "新东方",
-    "courseNum": 40,
-    "courseTime": "2015-3-20",
-    "free": false
+    "jiangpin":"iPhone",
+    "courseTime": "2015-3-20"
   },
   {
     "src": "images/class.png",
     "href": "#",
     "name": "高性能JavaScript",
     "dept": "新东方",
-    "courseNum": 40,
-    "courseTime": "2015-3-20",
-    "free": true
+    "jiangpin":"iPhone",
+    "courseTime": "2015-3-20"
   },
   {
     "src": "images/class.png",
     "href": "#",
     "name": "高性能JavaScript",
     "dept": "新东方",
-    "courseNum": 50,
-    "courseTime": "2015-3-20",
-    "free": false
+    "jiangpin":"iPhone",
+    "courseTime": "2015-3-20"
   },
   {
     "src": "images/class.png",
     "href": "#",
     "name": "高性能JavaScript",
     "dept": "新东方",
-    "courseNum": 450,
-    "courseTime": "2015-3-20",
-    "free": true
+    "jiangpin":"iPhone",
+    "courseTime": "2015-3-20"
   },
   {
     "src": "images/class.png",
     "href": "#",
     "name": "高性能JavaScript",
     "dept": "新东方",
-    "courseNum": 450,
-    "courseTime": "2015-3-20",
-    "free": false
+    "jiangpin":"iPhone",
+    "courseTime": "2015-3-20"
   },
   {
     "src": "images/class.png",
     "href": "#",
     "name": "高性能JavaScript",
     "dept": "新东方",
-    "courseNum": 450,
-    "courseTime": "2015-3-20",
-    "free": false
+    "jiangpin":"iPhone",
+    "courseTime": "2015-3-20"
   },
   {
     "src": "images/class.png",
     "href": "#",
     "name": "高性能JavaScript",
     "dept": "新东方",
-    "courseNum": 450,
-    "courseTime": "2015-3-20",
-    "free": true
+    "jiangpin":"iPhone",
+    "courseTime": "2015-3-20"
   },
   {
     "src": "images/class.png",
     "href": "#",
     "name": "高性能JavaScript",
     "dept": "新东方",
-    "courseNum": 4,
-    "courseTime": "2015-3-20",
-    "free": false
+    "jiangpin":"iPhone",
+    "courseTime": "2015-3-20"
   },
   {
     "src": "images/class.png",
     "href": "#",
     "name": "高性能JavaScript",
     "dept": "新东方",
-    "courseNum": 450,
-    "courseTime": "2015-3-20",
-    "free": true
+    "jiangpin":"iPhone",
+    "courseTime": "2015-3-20"
   },
   {
     "src": "images/class.png",
     "href": "#",
     "name": "高性能JavaScript",
     "dept": "新东方",
-    "courseNum": 450,
-    "courseTime": "2015-3-20",
-    "free": false
+    "jiangpin":"iPhone",
+    "courseTime": "2015-3-20"
   },
   {
     "src": "images/class.png",
     "href": "#",
     "name": "高性能JavaScript",
     "dept": "新东方",
-    "courseNum": 45,
-    "courseTime": "2015-3-20",
-    "free": true
+    "jiangpin":"iPhone",
+    "courseTime": "2015-3-20"
   },
   {
     "src": "images/class.png",
     "href": "#",
     "name": "高性能JavaScript",
     "dept": "新东方",
-    "courseNum": 450,
-    "courseTime": "2015-3-20",
-    "free": true
+    "jiangpin":"iPhone",
+    "courseTime": "2015-3-20"
   }
 ]
