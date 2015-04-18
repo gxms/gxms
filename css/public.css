@@ -222,52 +222,163 @@ img.bandContent {
     text-align: center;
 }
 
-.footerLink p{
+.footerLink p {
     margin: 10px 0;
     font-size: 20px;
 }
 
-.footerLink a{
+.footerLink a {
     display: block;
     color: #6a6969;
     margin: 5px 0;
 }
 
-.link{
+.link {
     float: left;
     margin-left: 20px;
 }
 
-.link>p{
+.link > p {
     margin-top: 10px;
 }
 
-.link p{
+.link p {
     font-size: 15px;
 }
 
-.service{
+.service {
     height: 50px;
     margin-top: 10px;
 }
 
-.service img{
+.service img {
     float: left;
     margin-right: 5px;
     display: inline-block;
 }
 
-.service p{
+.service p {
     float: left;
     display: inline-block;
 }
 
-.qrcode{
+.qrcode {
     margin: 10px 0 0 10px;
 }
 
-.copy{
+.copy {
     width: 100%;
     margin: 25px 0;
     text-align: center;
+}
+
+.alertBg {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    z-index: 98;
+    position: fixed !important;
+    position: absolute;
+}
+
+.alert {
+    background-color: #f1f1f1;
+    z-index: 99;
+    width: 500px;
+    height: 380px;
+    left: 50%;
+    top: 50%;
+    display: none;
+    margin-left: -250px;
+    margin-top: -180px;
+    position: fixed;
+}
+
+.close{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: url("../images/close.png");
+    cursor: pointer;
+}
+
+.alertTitle{
+    font-size: 24px;
+    color: #0067ac;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.alert form{
+    width: 400px;
+    height: 300px;
+    margin: 20px 50px;
+}
+
+.alert label{
+    width: 70px;
+    height: 36px;
+    padding: 0 15px;
+    text-align: right;
+    display: inline-block;
+}
+
+.fuck{
+    outline: none;
+    border-radius: 4px;
+    height: 20px;
+    width: 200px;
+    line-height: 20px;
+    padding: 5px 10px;
+}
+
+.alert form>p{
+    text-align: center;   
+}
+
+#sub{
+    width: 220px;
+    height: 36px;
+    color: #fff;
+    background-color: #fc8b05;
+    outline: none;
+    border: 1px #ad7129 solid;
+    margin: 5px 0 0 104px;
+}
+
+.success{
+    display: none;
+    width: 380px;
+    height: 300px;
+    margin: 20px 0 0 60px;
+}
+
+.success img{
+    display: inline-block;
+    width: 380px;
+    height: 70px;
+}
+
+.success p{
+    text-indent: 2em;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.success button{
+    width: 220px;
+    height: 36px;
+    color: #fff;
+    background-color: #fc8b05;
+    outline: none;
+    border: 1px #ad7129 solid;
+    margin: 5px 0 0 82px;
 }
