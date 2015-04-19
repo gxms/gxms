@@ -19,7 +19,7 @@ li {
 }
 
 html, body {
-    background-color: #fefafa;
+    background-color: #f1f1f1;
     width: 100%;
     height: 100%;
 }
@@ -381,4 +381,26 @@ img.bandContent {
     outline: none;
     border: 1px #ad7129 solid;
     margin: 5px 0 0 82px;
+}
+
+#page {
+    margin: 10px 0 60px 0;
+    width: 100%;
+    height: 32px;
+    text-align: center;
+    display: block;
+}
+
+.page {
+    padding: 6px;
+    line-height: 18px;
+    font-size: 18px;
+    color: #6d6d6d;
+    display: inline-block;
+    background-color: #fffefe;
+}
+
+.now {
+    color: #2573b5;
+    border: 1px solid #77a8d1;
 }
