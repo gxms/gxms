@@ -101,3 +101,176 @@
 #page {
     margin-bottom: 20px;
 }
+
+table {
+    color: #fff;
+}
+
+td, th {
+    border: 1px solid #fff;
+}
+
+th {
+    height: 80px;
+}
+
+td {
+    height: 34px;
+}
+
+.num, .nums, .prices, .price {
+    width: 110px;
+    line-height: 34px;
+    text-align: center;
+    background-color: #0092df;
+}
+
+.nums, .prices {
+    line-height: 80px;
+}
+
+.price, .prices {
+    background-color: #31b2eb;
+}
+
+.lecture, .lectures {
+    width: 110px;
+    line-height: 34px;
+    color: #000;
+    text-align: center;
+    background-color: #94d0f4;
+}
+
+.lectures {
+    line-height: 80px;
+}
+
+.info, .infos {
+    width: 500px;
+    text-align: center;
+    position: relative;
+    background-color: #0092df;
+}
+
+.infos > p {
+    color: #fed909;
+    font-weight: 100;
+}
+
+.info {
+    /*border-bottom: 2px solid red;*/
+}
+
+.info * {
+    float: left;
+}
+
+.info .discount {
+    width: 100px;
+    height: 24px;
+    border-radius: 4px;
+    color: #ff7c26;
+    padding: 0 20px;
+    margin-left: 20px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    background-color: #fff;
+    float: left;
+}
+
+.info .input {
+    width: 120px;
+    height: 24px;
+    margin-left: 20px;
+    border-radius: 4px;
+    position: relative;
+    background-color: #fff;
+}
+
+.input input {
+    position: absolute;
+    width: 68px;
+    height: 16px;
+    text-align: center;
+    padding: 4px 10px;
+    left: 0;
+    top: 0;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    color: #000;
+}
+
+.input .up {
+    position: absolute;
+    top: 3px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.input .down {
+    position: absolute;
+    bottom: 3px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.info .discountFree {
+    width: 120px;
+    height: 24px;
+    padding: 0 20px;
+    border-radius: 4px;
+    margin-left: 20px;
+    text-align: center;
+    background-color: #ff7c26;
+}
+
+.result, .results {
+    width: 164px;
+    background-color: #94d0f4;
+    line-height: 34px;
+    text-align: center;
+}
+
+.results > h4 {
+    color: #000;
+}
+
+.results > p {
+    color: #fd0101;
+    font-weight: 100;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.over{
+    width: 140px;
+    height: 55px;
+    margin: 20px auto;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.disOver{
+    height: 25px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #fd1800;
+}
+
+.allOver{
+    height: 30px;
+    line-height: 30px;
+    color: #000;
+}
+
+.btn{
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff7c26;
+    
+}
