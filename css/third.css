@@ -55,7 +55,7 @@
 .blueBand {
     width: 160px;
     height: 40px;
-    margin-top: 15px;
+    margin-top: 30px;
     background-color: #015daa;
 }
 
@@ -180,7 +180,7 @@ td {
 }
 
 .info .input {
-    width: 120px;
+    width: 110px;
     height: 24px;
     margin-left: 20px;
     border-radius: 4px;
@@ -244,7 +244,7 @@ td {
     font-size: 14px;
 }
 
-.over{
+.over {
     width: 140px;
     height: 55px;
     margin: 20px auto;
@@ -252,25 +252,198 @@ td {
     background-color: #fff;
 }
 
-.disOver{
+.disOver {
     height: 25px;
     line-height: 25px;
     font-weight: 700;
     color: #fd1800;
 }
 
-.allOver{
+.allOver {
     height: 30px;
     line-height: 30px;
     color: #000;
 }
 
-.btn{
+.btn {
     width: 140px;
     height: 30px;
     line-height: 30px;
     border: none;
     border-radius: 4px;
     background-color: #ff7c26;
-    
+
+}
+
+#discount {
+    background-color: #959595;
+    width: 1000px;
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#discount p {
+    float: left;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #ff7c26;
+}
+
+#discount ul {
+    float: left;
+    height: 72px;
+    padding: 14px 30px;
+}
+
+#discount ul li {
+    height: 24px;
+    color: #fff;
+    line-height: 24px;
+}
+
+#discount ul li span {
+    color: #fe0101;
+}
+
+#teacher, #student {
+    width: 1000px;
+    height: 200px;
+    position: relative;
+    background-color: #fefafa;
+}
+
+#teacher .ul, #student .ul {
+    width: 910px;
+    height: 200px;
+    position: absolute;
+    left: 45px;
+    overflow: hidden;
+}
+
+#teacher ul, #student ul {
+    position: absolute;
+    left: 0;
+}
+
+#teacher li {
+    width: 120px;
+    height: 180px;
+    padding-top: 20px;
+    margin: 0 5px;
+    float: left;
+}
+
+#teacher li img {
+    width: 120px;
+    height: 140px;
+}
+
+#teacher li p {
+    text-align: center;
+}
+
+.arrowImg {
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+}
+
+#student .arrowImg {
+    top: 80px;
+}
+
+.prevImg {
+    left: 10px;
+}
+
+.nextImg {
+    right: 10px;
+}
+
+#student {
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+#student .ul {
+    height: 300px;
+}
+
+#student ul {
+    height: 300px;
+}
+
+#student li {
+    width: 118px;
+    margin: 20px 5px 0 5px;
+    float: left;
+    border: 1px solid #b5b2b2;
+    height: 256px;
+}
+
+.student {
+    width: 120px;
+    height: 160px;
+    position: relative;
+}
+
+.student img {
+    width: 118px;
+    height: 160px;
+}
+
+.student div {
+    width: 118px;
+    height: 24px;
+    background-color: #000;
+    opacity: 0.5;
+    filter: alpha(opacity:50);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.student p {
+    width: 118px;
+    height: 24px;
+    text-align: center;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.college {
+    width: 118px;
+    height: 24px;
+    background-color: #f5031f;
+    text-align: center;
+    color: #fff;
+}
+
+.score {
+    width: 118px;
+    height: 24px;
+    text-align: center;
+    color: #f5031f;
+}
+
+.studentFuck {
+    width: 112px;
+    height: 48px;
+    line-height: 24px;
+    font-size: 14px;
+    padding: 0 4px;
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
 }

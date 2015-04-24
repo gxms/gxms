@@ -1,3 +1,4 @@
+//表格信息处理部分
 $('.up').click(function () {
     var input = $(this).parent().find('.val');
     input.val(parseInt(input.val()) + 1);
@@ -14,6 +15,7 @@ $('.down').click(function () {
     change();
 });
 
+//计算折扣并更新数据
 function change() {
     var val = $('.val');
     var count = 0, discount = 0, over = 0;
@@ -104,4 +106,33 @@ $('#sub').click(function () {
         alert("请填写完整信息！");
     }
     return false;
+});
+
+
+//图片轮播部分
+//设置图片轮播宽度
+var uls = $('.ul ul');
+for (var i = 0; i < 2; i++) {
+    uls.eq(i).css("width", uls.eq(i).children().length * 130 + "px");
+}
+
+var liu = [0, 0];
+
+//左右点击
+$('.prevImg').click(function () {
+    var index = $('.prevImg').index($(this));
+    var obj = uls.eq(index);
+    var len = obj.children().length;
+    liu[index]--;
+    liu[index] = liu[index] < 0 ? (len - 7) : liu[index];
+    obj.animate({"left": -130 * liu[index] + "px"}, 400);
+});
+
+$('.nextImg').click(function () {
+    var index = $('.nextImg').index($(this));
+    var obj = uls.eq(index);
+    var len = obj.children().length;
+    liu[index]++;
+    liu[index] = liu[index] > (len - 7) ? 0 : liu[index];
+    obj.animate({"left": -130 * liu[index] + "px"}, 400);
 });
