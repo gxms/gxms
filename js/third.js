@@ -63,11 +63,20 @@ function change() {
 
 
 $('.btn').click(function () {
-    $('.alertBg').show();
-    $('.alert').show();
-    $('#wocao').show();
-    $('.success').hide();
-    console.log($(this));
+    var val = $('.val');
+    var count = 0;
+    for (var i = 0; i < 4; i++) {
+        count += parseInt(val.eq(i).val());
+    }
+
+    if (count == 0) {
+        alert("请选择需要团购的课程！");
+    } else {
+        $('.alertBg').show();
+        $('.alert').show();
+        $('#wocao').show();
+        $('.success').hide();
+    }
 });
 
 $('.success>button').click(function () {
@@ -89,10 +98,28 @@ $('#sub').click(function () {
     var subject = $('#subject').val();
     var phone = $('#phone').val();
     if (name && school && subject && phone) {
+        var data = {
+            name: $('input[name="name"]').val(),
+            school: $('input[name="school"]').val(),
+            subject: $('input[name="subject"]').val(),
+            phone: $('input[name="phone"]').val(),
+            sex: $('input:radio[name="sex"]:checked').val()
+
+        };
+        data.list = {};
+        var val = $('.val');
+        for (var i = 0; i < 4; i++) {
+            var num = parseInt(val.eq(i).val());
+            if (num > 0) {
+                data.list[val.eq(i).parent().parent().parent().find('.lecture').html()] = num;
+            }
+        }
+        //console.log(data);
+
         $.ajax({
             type: "POST",
             url: "wocao",
-            data: $('#wocao').serialize(),
+            data: JSON.stringify(data),
             async: false,
             error: function () {
                 alert("Connection error");

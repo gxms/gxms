@@ -3,7 +3,7 @@ $('.main').on('click', 'button', function () {
     $('.alert').show();
     $('#wocao').show();
     $('.success').hide();
-    console.log($(this));
+    $('#cid').val($(this).data('cid'));
 });
 
 $('.success>button').click(function () {
@@ -25,10 +25,21 @@ $('#sub').click(function () {
     var subject = $('#subject').val();
     var phone = $('#phone').val();
     if (name && school && subject && phone) {
+        var data = {
+            name: $('input[name="name"]').val(),
+            school: $('input[name="school"]').val(),
+            subject: $('input[name="subject"]').val(),
+            phone: $('input[name="phone"]').val(),
+            sex: $('input:radio[name="sex"]:checked').val(),
+            cid: $('#cid').val()
+        };
+
+        //console.log(data);
+
         $.ajax({
             type: "POST",
             url: "wocao",
-            data: $('#wocao').serialize(),
+            data: JSON.stringify(data),
             async: false,
             error: function () {
                 alert("Connection error");
