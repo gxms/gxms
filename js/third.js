@@ -103,8 +103,8 @@ $('#sub').click(function () {
             school: $('input[name="school"]').val(),
             subject: $('input[name="subject"]').val(),
             phone: $('input[name="phone"]').val(),
-            sex: $('input:radio[name="sex"]:checked').val()
-
+            sex: $('input:radio[name="sex"]:checked').val(),
+            shopid: 88//商家id取自url
         };
         data.list = {};
         var val = $('.val');
@@ -125,7 +125,7 @@ $('#sub').click(function () {
                 alert("Connection error");
             },
             success: function () {
-                $('#wocao').hide();
+                $('#wocao').reset().hide();
                 $('.success').show();
             }
         });

@@ -1,9 +1,11 @@
+var cid = null;
+
 $('.main').on('click', 'button', function () {
     $('.alertBg').show();
     $('.alert').show();
     $('#wocao').show();
     $('.success').hide();
-    $('#cid').val($(this).data('cid'));
+    cid = $(this).data('cid');
 });
 
 $('.success>button').click(function () {
@@ -31,7 +33,7 @@ $('#sub').click(function () {
             subject: $('input[name="subject"]').val(),
             phone: $('input[name="phone"]').val(),
             sex: $('input:radio[name="sex"]:checked').val(),
-            cid: $('#cid').val()
+            cid: cid
         };
 
         //console.log(data);
@@ -45,7 +47,7 @@ $('#sub').click(function () {
                 alert("Connection error");
             },
             success: function () {
-                $('#wocao').hide();
+                $('#wocao').reset().hide();
                 $('.success').show();
             }
         });
