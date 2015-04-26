@@ -118,15 +118,15 @@ $('#sub').click(function () {
 
         $.ajax({
             type: "POST",
-            url: "wocao",
+            url: "../data.php",
+            dataType: "json",
             data: JSON.stringify(data),
-            async: false,
+            success: function () {
+                $('#wocao').hide();
+                $('.success').show();
+            },
             error: function () {
                 alert("Connection error");
-            },
-            success: function () {
-                $('#wocao').reset().hide();
-                $('.success').show();
             }
         });
     } else {
